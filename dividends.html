@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dividends</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">   <!--  why doesn't it work? -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--    <link rel="stylesheet" href="css/media.css">-->
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header__wrapper">
+        <div class="container header__container">
+        <div class="header__menu">
+            <div class="menu__icon menu__icon--light">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link menu__link--light">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="projects.html" class="menu__link menu__link--light">Проекты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="cases.html" class="menu__link menu__link--light">Инвестиционные-портфели</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="dividends.html" class="menu__link menu__link--light menu__link--activelight">Дивиденды</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about-us.html" class="menu__link menu__link--light">Акционерам и Инвесторам</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu__body-extended">
+                <div class="menu__wrapper">
+                    <div class="menu__search">
+                        <a href="#" class="menu__search-btn"><img src="img/icon/search.svg" alt=""></a>
+                        <input type="text" class="menu__search-text" placeholder="Что ищем?">
+                    </div>
+                    <div class="menu__buttons">
+                        <a href="login.html" class="menu__btn menu__btn-login">Войти</a>
+                        <a href="registration.html" class="menu__btn menu__btn-registration">Регистрация</a>
+                    </div>
+                </div>
+
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="index.html#news" class="menu__sub-link">Новости</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="index.html#contacts" class="menu__sub-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="projects.html" class="menu__link">Проекты</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project1" class="menu__sub-link">Турецкий поток</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project2" class="menu__sub-link">Северный поток - 2</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project3" class="menu__sub-link">Ковыктинское месторождение</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project4" class="menu__sub-link">Мегапроект ЯМАЛ</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project5" class="menu__sub-link">Сила Сибири</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project6" class="menu__sub-link">Заполярное месторождение</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project7" class="menu__sub-link">Сахалин — Хабаровск — Владивосток</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="projects.html#project8" class="menu__sub-link">Камчатка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="dividends.html" class="menu__link">Дивиденды</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="#dividend-policy" class="menu__sub-link">Политика ПАО «Газпром»</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#dividend-history" class="menu__sub-link">История дивидендных выплат</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about-us.html" class="menu__link">Акционерам и Инвесторам</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="about-us.html#about-stocks" class="menu__sub-link">Сведения об акциях</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="about-us.html#about-history" class="menu__sub-link">История акционерного капитала</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <a href="index.html" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    </div>
+</header>
+
+<main class="dividends">
+    <div class="container">
+        <h1 class="dividends__title" id="dividend-policy">Дивидендная политика ПАО «Газпром»</h1>
+        <p class="dividends__text">
+            Дивидендная политика ПАО «Газпром» была утверждена Советом директоров в декабре 2019 г. и предоставляет акционерам и инвесторам прозрачный механизм определения величины дивидендных выплат, которые напрямую зависят от финансовых результатов компании.</p>
+        <p class="dividends__text">
+            Документ содержит исчерпывающий перечень «неденежных» корректировок для расчета дивидендной базы из чистой прибыли Группы «Газпром» по МСФО. Определяемая таким образом скорректированная чистая прибыль более точно отражает денежный поток компании.</p>
+        <p class="dividends__text">
+            Использованные в Дивидендной политике формулировки отличаются точностью и полнотой, позволяя избежать неверных интерпретаций при прогнозировании размера будущих дивидендов Общества. Корректировки могут работать как в сторону увеличения, так и уменьшения дивидендной базы.</p>
+        <p class="dividends__text">
+            Вместе с тем, в Дивидендной политике содержится ограничение по условиям выплат, которое служит дополнительным фактором финансовой устойчивости Общества. В случае, если долговая нагрузка Группы «Газпром» превысит уровень 2,5 по коэффициенту «Чистый долг/EBITDA», Совет директоров имеет возможность предложить размер дивидендов ниже целевых уровней.</p>
+        <table class="table dividends__table" id="dividend-history">
+            <thead>
+            <tr>
+                <th>Год</th>
+                <th>Размер дивидендов
+                    на одну акцию, руб.</th>
+                <th>Всего объявленных
+                    дивидендов, руб.</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2020</td>
+                <td>12,55</td>
+                <td>297,1 млрд</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>15,24</td>
+                <td>360,8 млрд</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>16,61</td>
+                <td>393 217 049 269,00</td>
+            </tr>
+            <tr>
+                <td>2017</td>
+                <td>8,04</td>
+                <td>190 335 043 716,00</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>8,0397</td>
+                <td>190 327 941 698,00</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>7,89</td>
+                <td>186 784 016781,00</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>7,20</td>
+                <td>170 449 292 880,00</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>7,20</td>
+                <td>170 449 292 880,00</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>5,99</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>8,97</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>3,85</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td>2,39</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>0,36</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>2,66</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2006</td>
+                <td>2,54</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>1,50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2004</td>
+                <td>1,19</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>0,69</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>0,40</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2001</td>
+                <td>0,44</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>0,30</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>0,10</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1998</td>
+                <td>—</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td>0,03</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1996</td>
+                <td>0,02</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1995</td>
+                <td>0,02</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1994</td>
+                <td>0,02</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer class="footer">
+    <hr class="footer__line">
+    <div class="container">
+        <div class="footer__wrapper">
+            <p class="footer__text">© 2022 ООО «Газпром инвест»</p>
+            <p class="footer__text">ул. Стартовая, д. 5, лит. Д, Санкт-Петербург, 196210 1997-2022</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

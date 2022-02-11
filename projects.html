@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="css/media.css">-->
+</head>
+
+<body>
+
+<header class="header header__projects">
+    <div class="header__wrapper">
+        <div class="container header__container">
+        <div class="header__menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="projects.html" class="menu__link menu__link--active">Проекты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="cases.html" class="menu__link">Инвестиционные-портфели</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="dividends.html" class="menu__link">Дивиденды</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about-us.html" class="menu__link">Акционерам и Инвесторам</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu__body-extended">
+                <div class="menu__wrapper">
+                    <div class="menu__search">
+                        <a href="#" class="menu__search-btn"><img src="img/icon/search.svg" alt=""></a>
+                        <input type="text" class="menu__search-text" placeholder="Что ищем?">
+                    </div>
+                    <div class="menu__buttons">
+                        <a href="login.html" class="menu__btn menu__btn-login">Войти</a>
+                        <a href="registration.html" class="menu__btn menu__btn-registration">Регистрация</a>
+                    </div>
+                </div>
+
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="index.html#news" class="menu__sub-link">Новости</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="index.html#contacts" class="menu__sub-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="projects.html" class="menu__link">Проекты</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="#project1" class="menu__sub-link">Турецкий поток</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project2" class="menu__sub-link">Северный поток - 2</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project3" class="menu__sub-link">Ковыктинское месторождение</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project4" class="menu__sub-link">Мегапроект ЯМАЛ</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project5" class="menu__sub-link">Сила Сибири</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project6" class="menu__sub-link">Заполярное месторождение</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project7" class="menu__sub-link">Сахалин — Хабаровск — Владивосток</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="#project8" class="menu__sub-link">Камчатка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="dividends.html" class="menu__link">Дивиденды</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="dividends.html#dividend-policy" class="menu__sub-link">Политика ПАО «Газпром»</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="dividends.html#dividend-history" class="menu__sub-link">История дивидендных выплат</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about-us.html" class="menu__link">Акционерам и Инвесторам</a>
+                        <ul class="menu__sub-list">
+                            <li class="menu__sub-item">
+                                <a href="about-us.html#about-stocks" class="menu__sub-link">Сведения об акциях</a>
+                            </li>
+                            <li class="menu__sub-item">
+                                <a href="about-us.html#about-history" class="menu__sub-link">История акционерного капитала</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <a href="index.html" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    </div>
+</header>
+
+<main class="projects">
+    <div class="container">
+        <h1 class="projects__title">Проекты</h1>
+        <div class="projects__wrapper">
+            <div class="project-header" id="project1">
+                <div class="block-header">
+                    <div class="block__item-header front" style="background-image: url(img/project-bg-1.jpg);">
+                        <img src="img/icon/title-1.svg" alt="" class="front__img front__img--1">
+                        <h3 class="front__title front__title--big front__title--1">Турецкий поток</h3>
+                        <p class="front__subtitle">Газопровод повышает энергетическую безопасность Турции, Южной и Юго-Восточной Европы</p>
+                    </div>
+                    <div class="block__item-header back back--header">
+                        <h6 class="back__title back__title--header">31,5млрд м3 газа в год проектная мощность газопровода.</h6>
+                        <p class="back__text">«Турецкий поток» — новый экспортный газопровод из России в Турцию через Черное море.</p>
+                        <p class="back__text">Первая из двух ниток газопровода предназначена для поставок газа турецким потребителям, вторая — для газоснабжения стран Южной и Юго-Восточной Европы.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" id="project2">
+                <div class="block">
+                    <div class="block__item front" style="background-image: url(img/project-bg-2.jpg);">
+                        <img src="img/icon/title-2.svg" alt="" class="front__img front__img--2">
+                        <h3 class="front__title front__title--2">«Северный поток — 2»</h3>
+                        <p class="front__subtitle">Новый экспортный газопровод из России в Европу через Балтийское море</p>
+                    </div>
+                    <div class="block__item back">
+                        <h6 class="back__title">55млрд м3 газа в год мощность двух ниток.</h6>
+                        <p class="back__text">«Северный поток — 2» — новый экспортный газопровод из России в Европу через Балтийское море.</p>
+                        <p class="back__text">Решение о создании газопровода «Северный поток — 2» основывается на успешном опыте строительства и эксплуатации газопровода «Северный поток». Новый газопровод, также как и действующий, напрямую свяжет «Газпром» и европейских потребителей и обеспечит высокую надежность поставок российского газа в Европу.Это особенно важно в условиях падения добычи газа в Европе и роста спроса на его импорт.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" id="project3">
+                <div class="block">
+                    <div class="block__item front" style="background-image: url(img/project-bg-3.jpg);">
+                        <img src="img/icon/title-3.svg" alt="" class="front__img front__img--3">
+                        <h3 class="front__title front__title--3">Ковыктинское месторождение</h3>
+                        <p class="front__subtitle">Крупнейшее по запасам газа месторождение на Востоке России</p>
+                    </div>
+                    <div class="block__item back">
+                        <h6 class="back__title">55млрд м3 газа в год мощность двух ниток.</h6>
+                        <ul class="back__text back__list">
+                            <li>1,8трлн м3 запасы газа;</li>
+                            <li>65,7млн тонн газового конденсата;</li>
+                            <li>27млрд м3 газа в год планируемая проектная мощность.</li>
+                        </ul>
+                        <p class="back__text">Ковыктинское газоконденсатное месторождение — крупнейшее на Востоке России по запасам газа. Является базовым для формирования Иркутского центра газодобычи и ресурсной базой для газопровода «Сила Сибири» наряду с Чаяндинским месторождением в Якутии.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" id="project4">
+                <div class="block">
+                    <div class="block__item front" style="background-image: url(img/project-bg-4.jpg);">
+                        <img src="img/icon/title-4.svg" alt="" class="front__img front__img--4">
+                        <h3 class="front__title front__title--big front__title--4">ЯМАЛ</h3>
+                        <p class="front__subtitle">Ключевой центр газодобычи для развития российской газовой отрасли в XXI веке</p>
+                    </div>
+                    <div class="block__item back">
+                        <h6 class="back__title">«Газпром» будет вести здесь добычу более 100 лет.</h6>
+                        <ul class="back__text back__list">
+                            <li>18 месторождений «Газпрома»;</li>
+                            <li>20,4 трлн м3 газа;</li>
+                            <li>~1 млрд тонн газового конденсата и нефти.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-header" id="project5">
+                <div class="block-header">
+                    <div class="block__item-header front" style="background-image: url(img/project-bg-5.jpg);">
+                        <img src="img/icon/title-5.svg" alt="" class="front__img front__img--5">
+                        <h3 class="front__title front__title--big front__title--5">«Сила Сибири»</h3>
+                        <p class="front__subtitle">Крупнейшая система транспортировки газа на Востоке России</p>
+                    </div>
+                    <div class="block__item-header back back--header">
+                        <h6 class="back__title back__title--header">38млрд м3 газа в год экспортная производительность.</h6>
+                        <p class="back__text">В настоящее время магистральный газопровод «Сила Сибири» («восточный» маршрут) транспортирует газ с Чаяндинского месторождения — базового для Якутского центра газодобычи — российским потребителям на Дальнем Востоке и в Китай.</p>
+                        <p class="back__text">В конце 2022 года подача газа в «Силу Сибири» начнется еще с одного месторождения — Ковыктинского, на основе которого формируется Иркутский центр газодобычи.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" id="project6">
+                <div class="block">
+                    <div class="block__item front" style="background-image: url(img/project-bg-6.jpg);">
+                        <img src="img/icon/title-6.svg" alt="" class="front__img front__img--6">
+                        <h3 class="front__title front__title--6">Заполярное месторождение</h3>
+                        <p class="front__subtitle">Самое мощное по добыче газа месторождение в России</p>
+                    </div>
+                    <div class="block__item back">
+                        <h6 class="back__title">Самое мощное по добыче газа месторождение в России</h6>
+                        <ul class="back__text back__list">
+                            <li>130млрд м3 газа в годпроектная мощность</li>
+                            <li>>3,5трлн м3 газаначальные запасы</li>
+                            <li>~80млн т газового конденсата и нефтиначальные запасы</li>
+                        </ul>
+                        <p class="back__text">Заполярное нефтегазоконденсатное месторождение является одним из крупнейших по объему запасов и самым мощным по добыче газа в России.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" id="project7">
+                <div class="block">
+                    <div class="block__item front" style="background-image: url(img/project-bg-7.jpg);">
+                        <img src="img/icon/title-7.svg" alt="" class="front__img front__img--7">
+                        <h3 class="front__title front__title--7">«Сахалин — Хабаровск — Владивосток»</h3>
+                        <p class="front__subtitle">Первая на Востоке России межрегиональная газотранспортная система</p>
+                    </div>
+                    <div class="block__item back">
+                        <h6 class="back__title">5,5 млрд м3 газа в год проектная производительность первого пускового комплекса.</h6>
+                        <p class="back__text">Газотранспортная система (ГТС) «Сахалин — Хабаровск — Владивосток» является первой на Востоке России межрегиональной газотранспортной системой.</p>
+                        <p class="back__text">Она предназначена для доставки газа, добываемого на шельфе Сахалина, потребителям Хабаровского и Приморского краев. ГТС создала условия для их масштабной газификации и поставок газа в страны Азиатско-Тихоокеанского региона.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" id="project8">
+                <div class="block">
+                    <div class="block__item front" style="background-image: url(img/project-bg-8.jpg);">
+                        <img src="img/icon/title-8.svg" alt="" class="front__img front__img--8">
+                        <h3 class="front__title front__title--8">Камчатка</h3>
+                        <p class="front__subtitle">Новый центр газодобычи</p>
+                    </div>
+                    <div class="block__item back">
+                        <h6 class="back__title">16 млрд м3 суммарные запасы газа.</h6>
+                        <p class="back__text">Основным документом, определяющим стратегию развития газоснабжения и газификации Восточной Сибири и Дальнего Востока, является государственная «Программа создания в Восточной Сибири и на Дальнем Востоке единой системы добычи, транспортировки газа и газоснабжения с учетом возможного экспорта газа на рынки Китая и других стран АТР» (Восточная газовая программа).</p>
+                        <p class="back__text">«Газпром» является координатором деятельности по реализации Восточной газовой программы.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <hr class="footer__line">
+    <div class="container">
+        <div class="footer__wrapper">
+            <p class="footer__text">© 2022 ООО «Газпром инвест»</p>
+            <p class="footer__text">ул. Стартовая, д. 5, лит. Д, Санкт-Петербург, 196210 1997-2022</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
