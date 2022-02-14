@@ -1,0 +1,351 @@
+/*for menu & footer*/
+@media (max-width: 1200px) {
+    .menu__body .menu__item {
+        margin-right: 37px;
+        text-align: center;
+    }
+}
+@media (max-width: 1024px) {
+    .menu__body .menu__link{
+        font-size: 14px;
+    }
+    .menu__search{
+        width: 50%;
+    }
+}
+@media (max-width: 869px) {
+    .menu__body{
+        display: none;
+    }
+    .menu__body-extended .menu__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header._active .header__menu {
+        padding-bottom: 10px;
+    }
+    .menu__search{
+        width: 45%;
+    }
+    .menu__body-extended .menu__item:nth-child(2){
+        margin-bottom: 25px;
+    }
+    .header__logo{
+        margin-right: -20px;
+    }
+}
+@media (max-width: 768px) {
+    .menu__search{
+        width: 40%;
+    }
+    .menu__search-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 725px){
+    .menu__search,
+    .menu__btn,
+    .menu__buttons {
+        width: 100%;
+    }
+    .menu__search{
+        margin-bottom: 40px;
+    }
+    .menu__btn-login {
+        margin-bottom: 25px;
+    }
+    .menu__btn-registration {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .menu__body-extended .menu__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu__body-extended .menu__item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .footer__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*for projects page*/
+@media (max-width: 992px) {
+    .projects__wrapper{
+        display: block;
+    }
+    .header__projects{
+        min-height: 500px;
+    }
+    .projects__title {
+        margin-top: -250px;
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 95px;
+    }
+    .project-item{
+        max-width: 100%;
+    }
+    .project-header {
+        height: 350px;
+    }
+    .block-header {
+        height: 100%;
+    }
+    .front__title--big{
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+@media (max-width: 576px) {
+    .header__projects{
+        min-height: 500px;
+    }
+    .projects__title {
+        margin-top: -280px;
+        font-size: 56px;
+        line-height: 66px;
+        margin-bottom: 88px;
+    }
+}
+@media (max-width: 430px) {
+    .front__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .back__title{
+        font-size: 16px;
+    }
+    .back__text {
+        font-size: 11px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .front__img--7 {
+        padding-top: 30px;
+        margin-bottom: 23px;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*for main page*/
+@media (max-width: 1320px) {
+    .wrapper-title {
+        margin-top: -260px;
+    }
+    .wrapper-banner {
+        margin-top: -165px;
+    }
+}
+@media (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        grid-template-areas:
+            "hd"
+	        "sd"
+            "main";
+    }
+    .wrapper-banner{
+        margin-top: -40px;
+    }
+    .main-page__project-title{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper-banner{
+        margin-top: -66px;
+    }
+    .wrapper-inner{
+        display: block;
+    }
+    .main-page__banner{
+        margin: 0 auto 20px;
+    }
+    .main-page__banner:last-child{
+        margin-bottom: 0;
+    }
+    .main-page__project{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .wrapper-title {
+        margin-top: -335px;
+    }
+    .main-page__project .title{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .main-page__project .text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .main-page__title{
+        font-size: 68px;
+        line-height: 75px;
+    }
+    .main-page__subtitle{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 380px) {
+    .main-page__banner{
+        min-height: 300px;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*for investments-page*/
+@media (max-width: 1300px) {
+    .investments__title{
+        font-size: 60px;
+        line-height: 72px;
+    }
+}
+@media (max-width: 992px) {
+    .investments__title{
+        margin-bottom: 65px;
+    }
+    .investments__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "hd"
+        "sd"
+        "main";
+        grid-gap: 0;
+    }
+    .investments__subtitle{
+        font-size: 40px;
+        line-height: 52px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 430px) {
+    .investments__wrapper{
+        margin-top: -274px;
+    }
+    .investments__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .investments__subtitle{
+        font-size: 29px;
+        line-height: 34px;
+    }
+
+    .investments__table tbody tr {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .investments__table th:nth-child(1) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .investments__table th:nth-child(3) span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .investments__table th {
+         padding: 14px 0;
+    }
+    .investments__table tbody td {
+        padding: 12px 0;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 430px) {
+    .dividends__title {
+        margin-top: 20px;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    .dividends__text {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .dividends__table th {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .dividends__table tbody tr {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 430px) {
+    .about__title {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    .about__title--margin {
+        margin-top: 20px;
+    }
+    .about__text-italic {
+        margin: 20px 0 30px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .about__text {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 430px) {
+    .warning__title {
+        margin-top: 25px;
+        font-size: 34px;
+        line-height: 45px;
+        margin-bottom: 25px;
+    }
+    .warning__span {
+        font-size: 16px;
+    }
+    .warning__text {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .warning__text:last-child {
+        margin-bottom: 30px;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*for login/registration*/
+@media (max-width: 1140px) {
+    .form__wrapper {
+        order: 2;
+    }
+    .form__content {
+        order: 1;
+    }
+    .form__content-subtitle {
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 430px) {
+    .form__content-title {
+        margin: 40px 0 10px;
+        font-size: 58px;
+        line-height: 75px;
+    }
+    .form__content-subtitle {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .form__label-registration {
+        width: 100%;
+    }
+}

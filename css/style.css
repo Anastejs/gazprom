@@ -135,6 +135,7 @@ body._lock{
 .header__investments{
 	background: url("../img/header-investments-bg.jpg") no-repeat center / cover;
 	min-height: 552px;
+	z-index: 1;
 }
 
 .header__wrapper {
@@ -158,9 +159,6 @@ body._lock{
 }
 .menu__item {
 	margin-right: 42px;
-}
-.menu__item:last-child{
-	margin-right: 0;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*for icon*/
@@ -244,6 +242,7 @@ body._lock{
 .menu__wrapper{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 60px;
 }
 .menu__body-extended .menu__list{
@@ -255,7 +254,7 @@ body._lock{
 	display: flex;
 	align-items: center;
 	color: transparent;
-	width: 750px;
+	width: 55%;
 	border-bottom: 1px solid white;
 }
 .menu__search-text{
@@ -277,6 +276,7 @@ body._lock{
 .menu__buttons{
 	display: flex;
 	align-items: end;
+	flex-wrap: wrap;
 	margin-bottom: -25px;
 }
 .menu__btn{
@@ -360,19 +360,39 @@ body._lock{
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*for main part*/
-.main-page{
-	/*background: #E5E5E5;*/
-}
 .wrapper{
 	display: grid;
-	grid-template-columns: 575px auto;
+	grid-template-columns: auto 696px;
+	grid-template-areas:
+	        "hd sd"
+	        "main sd";
 	grid-gap: 30px;
+	padding-bottom: 40px;
 }
-.wrapper-project{
+.wrapper-title {
+	grid-area: hd;
 	margin-top: -229px;
 }
-.wrapper-banner{
+.wrapper-project{
+	grid-area: main;
+}
+.wrapper-banner {
+	grid-area: sd;
 	margin-top: -145px;
+}
+.main-page__title{
+	font-size: 74px;
+	font-weight: 900;
+	line-height: 91px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.main-page__subtitle{
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 31px;
+	max-width: 515px;
+	color: #fff;
 }
 .wrapper-inner{
 	display: grid;
@@ -389,38 +409,23 @@ body._lock{
 	color: white;
 	text-align: center;
 }
+.main-page__project:last-child{
+	margin-bottom: 0;
+}
 .main-page__banner{
 	min-height: 333px;
-	width: 100%;
+	max-width: 333px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-.main-page__project--1{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	text-align: left;
-}
-.main-page__project--1-title{
-	font-size: 74px;
-	font-weight: 900;
-	line-height: 91px;
-	margin-bottom: 10px;
-}
-.main-page__project--1-subtitle{
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 31px;
-	max-width: 515px;
-	margin-bottom: auto;             /* REMEMBER! когда align-self не срабатывает*/
-}
-.main-page__project--1-text{
+.main-page__project-title{
 	font-size: 26px;
 	font-weight: 600;
 	line-height: 30px;
 	color: black;
 	text-decoration: underline;
+	margin-bottom: 30px;
 }
 .main-page__project .title{
 	font-size: 66px;
@@ -442,7 +447,6 @@ body._lock{
 	margin-bottom: 20px;
 	max-width: 389px;
 }
-
 .main-page__project--3-title{
 	padding-top: 149px;
 	padding-bottom: 11px;
@@ -556,7 +560,6 @@ body._lock{
 }
 .about__text{
 	font-size: 18px;
-	font-weight: 400;
 	line-height: 29px;
 	max-width: 940px;
 	margin-bottom: 25px;
@@ -566,6 +569,8 @@ body._lock{
 }
 .about__graph{
 	margin-bottom: 60px;
+	width: 100%;
+	max-width: 940px;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*for footer*/
@@ -601,12 +606,13 @@ body._lock{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	margin-bottom: 44px;
+	overflow: hidden;
 }
 
 .project-header{
 	grid-column-start: 1;
 	grid-column-end: 4;
-	min-height: 442px;
+	/*min-height: 442px;*/
 	max-width: 1302px;
 	background: #1b1e21;
 	margin: auto;
@@ -898,9 +904,6 @@ body._lock{
 	grid-gap: 90px;
 	margin-top: -229px;
 }
-.investments__title {
-	grid-area: hd;
-}
 .investments__content {
 	grid-area: main;
 	margin-bottom: 40px;
@@ -908,8 +911,8 @@ body._lock{
 .investments__tables {
 	grid-area: sd;
 }
-
 .investments__title{
+	grid-area: hd;
 	font-size: 78px;
 	font-weight: 900;
 	line-height: 91px;
@@ -943,6 +946,7 @@ body._lock{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	width: 100%;
 }
 .investments__item{
 	font-size: 16px;
@@ -965,6 +969,7 @@ body._lock{
 }
 .investments__table{
 	table-layout: auto;
+	z-index: 0;
 }
 .investments__table tbody td {
 	padding: 15px;
@@ -1008,5 +1013,3 @@ body._lock{
 .investments__table th:nth-child(3) p{
 	margin-bottom: 5px;
 }
-
-
